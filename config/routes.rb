@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  get '/help_path', to: 'static_pages#help'
+  get '/help', to: 'static_pages#help', as: :help
 
-  get '/about_path', to: 'static_pages#about'
+  get '/about', to: 'static_pages#about', as: :about
 
-  get '/contact_path', to: 'static_pages#contact'
+  get '/contact', to: 'static_pages#contact', as: :contact
 
-  get '/signup_path', to: 'users#new'
+  get '/signup', to: 'users#new', as: :signup
 
   root 'static_pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
